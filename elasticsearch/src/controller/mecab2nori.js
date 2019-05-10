@@ -1,7 +1,7 @@
 const csvtojsonV2 = require("csvtojson/v2")
 const fs = require('fs')
 
-module.exports.mecab2nori = (context) => {
+module.exports = (context) => {
   let inputFilePath = context.file
   let outputFilePath = context.output
 

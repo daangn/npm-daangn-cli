@@ -1,10 +1,10 @@
 {
-  "name": "dgn",
+  "name": "daangn-es-cli",
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
   "bin": {
-    "dgn": "src/index.js"
+    "daangn-elasticsearch": "src/index.js"
   },
   "scripts": {
     "start": "node src/index.js --help"

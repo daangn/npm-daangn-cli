@@ -6,7 +6,7 @@ const DESCRIPTION = `
 [examples]
 
 $ $0 <domain> [command]
-$ dgn elasticsearch mecab2nori -f {INPUT_PATH} -o {OUTPUT_PATH}
+$ daangn-es mecab2nori -f {INPUT_PATH} -o {OUTPUT_PATH}
 `
 
 const dispatch = require('./dispatch')
@@ -16,9 +16,8 @@ require('yargs')
   .scriptName('dgn')
   .help('help')
   .version('version', '0.0.1')
-  .command('elasticsearch <command>', 'Do something about elasticsearch', (yargs) => {
+  .command('mecab2nori', 'Do something about elasticsearch', (yargs) => {
     return yargs
-      .positional('command', { type: 'string', requiresArg: true })
       .option('f', {
         alias : 'file',
         type: 'string',
@@ -31,13 +30,6 @@ require('yargs')
         nargs: 1,
       })
       .help()
-  })
-  .command('working [command]', 'welcome ter yargs!', (yargs) => {
-    yargs
-    .positional('command', {
-      type: 'string',
-    })
-    .help()
   })
   .middleware([dispatch])
   .argv

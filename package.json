@@ -1,0 +1,18 @@
+{
+  "name": "dgn",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "dgn": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js --help"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "yargs": "^13.2.2"
+  }
+}

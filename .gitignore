@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# secret files
+environment.rb
+.envrc
+
+# temp file
+*.swp
+.DS_Store
+result.*
+
